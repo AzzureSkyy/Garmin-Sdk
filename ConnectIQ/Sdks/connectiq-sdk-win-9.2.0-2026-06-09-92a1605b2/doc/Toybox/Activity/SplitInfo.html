@@ -1,0 +1,1051 @@
+
+<!-- Header -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Toybox.Activity.SplitInfo </title>
+
+    <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+    <script type="text/javascript" charset="utf-8">
+      pathId = "Toybox.Activity.SplitInfo";
+      relpath = '../../';
+    </script>
+    <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+ </head>
+
+ <body>
+<div class="nav_wrap">
+  <iframe id="nav" src="../../class_list.html"></iframe>
+  <div id="resizer"></div>
+</div>
+
+<div id="main" tabindex="-1">
+<iframe id="search_frame" src="../../class_list.html"></iframe>
+
+
+  <div id="content"><h1>Class: Toybox.Activity.SplitInfo</h1>
+
+  <!-- Inherits -->
+  <div class="box_info">
+    <dl>
+  <dt>Inherits:</dt>
+  <dd>
+    <span class="inheritName">Toybox.Lang.Object</span>
+    <ul class="fullTree">
+      <li class="next">
+  <div class="inline">
+    <a href="../../Toybox/Lang/Object.html">Toybox.Lang.Object</a>
+  </div>
+</li>
+<li class="next">
+  <div class="inline">
+    <a href="../../Toybox/Activity/SplitInfo.html">Toybox.Activity.SplitInfo</a>
+  </div>
+</li>
+    </ul>
+    <a href="#" class="inheritanceTree">show all</a>
+  </dd>
+</dl>
+  </div>
+
+<h2>Overview</h2>
+<!-- Overview -->
+
+<!-- Description -->
+  <div class="docstring">
+    <div class="discussion">
+      <p>
+The SplitInfo class contains information about the current split
+</p><p>
+This information is provided via the data field onTimerSplit API.
+</p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+<div class="tags">
+
+<!-- Since -->
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 5.2.2
+</p>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- Constants -->
+<h2>Constant Summary</h2>
+<dl class="constants">
+<dt id="SplitType-module" class="">
+    <h3>SplitType</h3>
+  </dt>
+  <div class="tags">
+    <p class="tag_title">Since:</p>
+    <div class="since"><p>
+API Level 5.2.2
+</p>
+
+</div>
+  </div>
+<table class="enumTable">
+  <tr>
+    <th class="enumTableHeader">Name</th>
+    <th class="enumTableHeader">Value</th>
+    <th class="enumTableHeader">Since</th>
+    <th class="enumTableHeader">Description</th>
+  </tr>
+  <tr class="enumTableOdd" id="SPLIT_TYPE_PACE_PRO_SPLIT-const">
+    <td class="enumTableCell">SPLIT_TYPE_PACE_PRO_SPLIT</td>
+    <td class="enumTableCell">0</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_ASCENT_SPLIT-const">
+    <td class="enumTableCell">SPLIT_TYPE_ASCENT_SPLIT</td>
+    <td class="enumTableCell">1</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_DESCENT_SPLIT-const">
+    <td class="enumTableCell">SPLIT_TYPE_DESCENT_SPLIT</td>
+    <td class="enumTableCell">2</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_INTERVAL_ACTIVE-const">
+    <td class="enumTableCell">SPLIT_TYPE_INTERVAL_ACTIVE</td>
+    <td class="enumTableCell">3</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_INTERVAL_REST-const">
+    <td class="enumTableCell">SPLIT_TYPE_INTERVAL_REST</td>
+    <td class="enumTableCell">4</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_INTERVAL_WARMUP-const">
+    <td class="enumTableCell">SPLIT_TYPE_INTERVAL_WARMUP</td>
+    <td class="enumTableCell">5</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_INTERVAL_COOLDOWN-const">
+    <td class="enumTableCell">SPLIT_TYPE_INTERVAL_COOLDOWN</td>
+    <td class="enumTableCell">6</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_INTERVAL_RECOVERY-const">
+    <td class="enumTableCell">SPLIT_TYPE_INTERVAL_RECOVERY</td>
+    <td class="enumTableCell">7</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_INTERVAL_OTHER-const">
+    <td class="enumTableCell">SPLIT_TYPE_INTERVAL_OTHER</td>
+    <td class="enumTableCell">8</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_CLIMB_ACTIVE-const">
+    <td class="enumTableCell">SPLIT_TYPE_CLIMB_ACTIVE</td>
+    <td class="enumTableCell">9</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_CLIMB_REST-const">
+    <td class="enumTableCell">SPLIT_TYPE_CLIMB_REST</td>
+    <td class="enumTableCell">10</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_SURF_ACTIVE-const">
+    <td class="enumTableCell">SPLIT_TYPE_SURF_ACTIVE</td>
+    <td class="enumTableCell">11</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_RUN_ACTIVE-const">
+    <td class="enumTableCell">SPLIT_TYPE_RUN_ACTIVE</td>
+    <td class="enumTableCell">12</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_RUN_REST-const">
+    <td class="enumTableCell">SPLIT_TYPE_RUN_REST</td>
+    <td class="enumTableCell">13</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_WORKOUT_ROUND-const">
+    <td class="enumTableCell">SPLIT_TYPE_WORKOUT_ROUND</td>
+    <td class="enumTableCell">14</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_LIVE_EVENT_SPLIT-const">
+    <td class="enumTableCell">SPLIT_TYPE_LIVE_EVENT_SPLIT</td>
+    <td class="enumTableCell">15</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_POWER_GUIDANCE_SPLIT-const">
+    <td class="enumTableCell">SPLIT_TYPE_POWER_GUIDANCE_SPLIT</td>
+    <td class="enumTableCell">16</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_RWD_RUN-const">
+    <td class="enumTableCell">SPLIT_TYPE_RWD_RUN</td>
+    <td class="enumTableCell">17</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_RWD_WALK-const">
+    <td class="enumTableCell">SPLIT_TYPE_RWD_WALK</td>
+    <td class="enumTableCell">18</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_CLIMB_PRO_CYCLING_CLIMB-const">
+    <td class="enumTableCell">SPLIT_TYPE_CLIMB_PRO_CYCLING_CLIMB</td>
+    <td class="enumTableCell">19</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_CLIMB_PRO_CYCLING_CLIMB_SECTION-const">
+    <td class="enumTableCell">SPLIT_TYPE_CLIMB_PRO_CYCLING_CLIMB_SECTION</td>
+    <td class="enumTableCell">20</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_WINDSURF_ACTIVE-const">
+    <td class="enumTableCell">SPLIT_TYPE_WINDSURF_ACTIVE</td>
+    <td class="enumTableCell">21</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_RWD_STAND-const">
+    <td class="enumTableCell">SPLIT_TYPE_RWD_STAND</td>
+    <td class="enumTableCell">22</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_TRANSITION-const">
+    <td class="enumTableCell">SPLIT_TYPE_TRANSITION</td>
+    <td class="enumTableCell">23</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_SWIM_STRAIGHTNESS-const">
+    <td class="enumTableCell">SPLIT_TYPE_SWIM_STRAIGHTNESS</td>
+    <td class="enumTableCell">25</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_ROUND_ACTIVE-const">
+    <td class="enumTableCell">SPLIT_TYPE_ROUND_ACTIVE</td>
+    <td class="enumTableCell">26</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_ROUND_REST-const">
+    <td class="enumTableCell">SPLIT_TYPE_ROUND_REST</td>
+    <td class="enumTableCell">27</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_SKI_LIFT_SPLIT-const">
+    <td class="enumTableCell">SPLIT_TYPE_SKI_LIFT_SPLIT</td>
+    <td class="enumTableCell">28</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_SKI_RUN_SPLIT-const">
+    <td class="enumTableCell">SPLIT_TYPE_SKI_RUN_SPLIT</td>
+    <td class="enumTableCell">29</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_OBSTACLE-const">
+    <td class="enumTableCell">SPLIT_TYPE_OBSTACLE</td>
+    <td class="enumTableCell">30</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_CYCLING_GROUP_RIDE-const">
+    <td class="enumTableCell">SPLIT_TYPE_CYCLING_GROUP_RIDE</td>
+    <td class="enumTableCell">31</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_DIVE-const">
+    <td class="enumTableCell">SPLIT_TYPE_DIVE</td>
+    <td class="enumTableCell">32</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_DIVE_SECTION-const">
+    <td class="enumTableCell">SPLIT_TYPE_DIVE_SECTION</td>
+    <td class="enumTableCell">33</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_SURFACE_TYPE_UNPAVED-const">
+    <td class="enumTableCell">SPLIT_TYPE_SURFACE_TYPE_UNPAVED</td>
+    <td class="enumTableCell">34</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_MARKER_MILE-const">
+    <td class="enumTableCell">SPLIT_TYPE_MARKER_MILE</td>
+    <td class="enumTableCell">38</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_MARKER_KILOMETER-const">
+    <td class="enumTableCell">SPLIT_TYPE_MARKER_KILOMETER</td>
+    <td class="enumTableCell">39</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_MARKER_HALF_MARATHON-const">
+    <td class="enumTableCell">SPLIT_TYPE_MARKER_HALF_MARATHON</td>
+    <td class="enumTableCell">40</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_MARKER_MANUAL-const">
+    <td class="enumTableCell">SPLIT_TYPE_MARKER_MANUAL</td>
+    <td class="enumTableCell">41</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_SURFACE_TYPE_PAVED-const">
+    <td class="enumTableCell">SPLIT_TYPE_SURFACE_TYPE_PAVED</td>
+    <td class="enumTableCell">42</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_TIMING_GATE-const">
+    <td class="enumTableCell">SPLIT_TYPE_TIMING_GATE</td>
+    <td class="enumTableCell">43</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_TIMING_RUN-const">
+    <td class="enumTableCell">SPLIT_TYPE_TIMING_RUN</td>
+    <td class="enumTableCell">44</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_TACX_COURSE-const">
+    <td class="enumTableCell">SPLIT_TYPE_TACX_COURSE</td>
+    <td class="enumTableCell">45</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_DOWNHILL_RUN-const">
+    <td class="enumTableCell">SPLIT_TYPE_DOWNHILL_RUN</td>
+    <td class="enumTableCell">46</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_DOWNHILL_LIFT-const">
+    <td class="enumTableCell">SPLIT_TYPE_DOWNHILL_LIFT</td>
+    <td class="enumTableCell">47</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="SPLIT_TYPE_SKI_RUN_SPLIT_SECTION-const">
+    <td class="enumTableCell">SPLIT_TYPE_SKI_RUN_SPLIT_SECTION</td>
+    <td class="enumTableCell">48</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="SPLIT_TYPE_INVALID-const">
+    <td class="enumTableCell">SPLIT_TYPE_INVALID</td>
+    <td class="enumTableCell">-1</td>
+    <td class="enumTableCell"><p>
+API Level 5.2.2
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr>
+</table>
+</dl>
+
+
+<h2>Instance Member Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+<ul class="summary">
+   <li class="public">
+  <span class="summary_signature summary_signature_link">
+    <a href="#averageSpeed-var" title="averageSpeed (Var)"><strong>averageSpeed</strong></a>  as <span class="type"><a href="../../Toybox/Lang/Float.html">Lang.Float</a></span> or <b>Null</b>
+  </span>
+
+
+
+  <span class="summary_desc">
+    <div class="inline">
+<p>
+Average speed for split in meters per second.
+</p>
+
+
+    </div>
+  </span>
+</li><li class="public">
+  <span class="summary_signature summary_signature_link">
+    <a href="#elapsedTime-var" title="elapsedTime (Var)"><strong>elapsedTime</strong></a>  as <span class="type"><a href="../../Toybox/Lang/Number.html">Lang.Number</a></span> or <b>Null</b>
+  </span>
+
+
+
+  <span class="summary_desc">
+    <div class="inline">
+<p>
+Elapsed time for split in milliseconds.
+</p>
+
+
+    </div>
+  </span>
+</li><li class="public">
+  <span class="summary_signature summary_signature_link">
+    <a href="#maxSpeed-var" title="maxSpeed (Var)"><strong>maxSpeed</strong></a>  as <span class="type"><a href="../../Toybox/Lang/Float.html">Lang.Float</a></span> or <b>Null</b>
+  </span>
+
+
+
+  <span class="summary_desc">
+    <div class="inline">
+<p>
+Max speed for split in meters per second.
+</p>
+
+
+    </div>
+  </span>
+</li><li class="public">
+  <span class="summary_signature summary_signature_link">
+    <a href="#splitDistance-var" title="splitDistance (Var)"><strong>splitDistance</strong></a>  as <span class="type"><a href="../../Toybox/Lang/Float.html">Lang.Float</a></span> or <b>Null</b>
+  </span>
+
+
+
+  <span class="summary_desc">
+    <div class="inline">
+<p>
+Split distance in meters.
+</p>
+
+
+    </div>
+  </span>
+</li><li class="public">
+  <span class="summary_signature summary_signature_link">
+    <a href="#splitType-var" title="splitType (Var)"><strong>splitType</strong></a>  as <span class="type"><a href="../../Toybox/Activity/SplitInfo.html#SplitType-module">SplitInfo.SplitType</a></span> or <b>Null</b>
+  </span>
+
+
+
+  <span class="summary_desc">
+    <div class="inline">
+<p>
+Type of split.
+</p>
+
+
+    </div>
+  </span>
+</li><li class="public">
+  <span class="summary_signature summary_signature_link">
+    <a href="#timerTime-var" title="timerTime (Var)"><strong>timerTime</strong></a>  as <span class="type"><a href="../../Toybox/Lang/Number.html">Lang.Number</a></span> or <b>Null</b>
+  </span>
+
+
+
+  <span class="summary_desc">
+    <div class="inline">
+<p>
+Timer time for split in milliseconds.
+</p>
+
+
+    </div>
+  </span>
+</li><li class="public">
+  <span class="summary_signature summary_signature_link">
+    <a href="#totalAscent-var" title="totalAscent (Var)"><strong>totalAscent</strong></a>  as <span class="type"><a href="../../Toybox/Lang/Float.html">Lang.Float</a></span> or <b>Null</b>
+  </span>
+
+
+
+  <span class="summary_desc">
+    <div class="inline">
+<p>
+Split ascent in meters.
+</p>
+
+
+    </div>
+  </span>
+</li><li class="public">
+  <span class="summary_signature summary_signature_link">
+    <a href="#totalDescent-var" title="totalDescent (Var)"><strong>totalDescent</strong></a>  as <span class="type"><a href="../../Toybox/Lang/Float.html">Lang.Float</a></span> or <b>Null</b>
+  </span>
+
+
+
+  <span class="summary_desc">
+    <div class="inline">
+<p>
+Split descent in meters.
+</p>
+
+
+    </div>
+  </span>
+</li>
+</ul>
+
+
+
+ <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    <dt id="averageSpeed-var" class="details">
+<h3 class="signature" id="averageSpeed-var">
+
+var averageSpeed  as <span class="type"><a href="../../Toybox/Lang/Float.html">Lang.Float</a></span> or <b>Null</b>
+
+</h3>
+
+
+
+<div class="docstring">
+  <div class="discussion">
+    <p>
+Average speed for split in meters per second
+</p>
+
+
+  </div>
+</div>
+
+<div class="tags">
+
+
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 5.2.2
+</p>
+
+</div>
+
+
+
+
+    <p class="tag_title">Returns:</p>
+    <ul class="return">
+      <li>
+  <div class="inline">
+    <p>
+Average speed for split in meters per second
+</p>
+
+
+  </div>
+</li>
+    </ul>
+</div>
+
+</dt><dt id="elapsedTime-var" class="details">
+<h3 class="signature" id="elapsedTime-var">
+
+var elapsedTime  as <span class="type"><a href="../../Toybox/Lang/Number.html">Lang.Number</a></span> or <b>Null</b>
+
+</h3>
+
+
+
+<div class="docstring">
+  <div class="discussion">
+    <p>
+Elapsed time for split in milliseconds
+</p>
+
+
+  </div>
+</div>
+
+<div class="tags">
+
+
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 5.2.2
+</p>
+
+</div>
+
+
+
+
+    <p class="tag_title">Returns:</p>
+    <ul class="return">
+      <li>
+  <div class="inline">
+    <p>
+Elapsed time in milliseconds
+</p>
+
+
+  </div>
+</li>
+    </ul>
+</div>
+
+</dt><dt id="maxSpeed-var" class="details">
+<h3 class="signature" id="maxSpeed-var">
+
+var maxSpeed  as <span class="type"><a href="../../Toybox/Lang/Float.html">Lang.Float</a></span> or <b>Null</b>
+
+</h3>
+
+
+
+<div class="docstring">
+  <div class="discussion">
+    <p>
+Max speed for split in meters per second
+</p>
+
+
+  </div>
+</div>
+
+<div class="tags">
+
+
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 5.2.2
+</p>
+
+</div>
+
+
+
+
+    <p class="tag_title">Returns:</p>
+    <ul class="return">
+      <li>
+  <div class="inline">
+    <p>
+Average speed for split in meters per second
+</p>
+
+
+  </div>
+</li>
+    </ul>
+</div>
+
+</dt><dt id="splitDistance-var" class="details">
+<h3 class="signature" id="splitDistance-var">
+
+var splitDistance  as <span class="type"><a href="../../Toybox/Lang/Float.html">Lang.Float</a></span> or <b>Null</b>
+
+</h3>
+
+
+
+<div class="docstring">
+  <div class="discussion">
+    <p>
+Split distance in meters
+</p>
+
+
+  </div>
+</div>
+
+<div class="tags">
+
+
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 5.2.2
+</p>
+
+</div>
+
+
+
+
+    <p class="tag_title">Returns:</p>
+    <ul class="return">
+      <li>
+  <div class="inline">
+    <p>
+Split distance in meters
+</p>
+
+
+  </div>
+</li>
+    </ul>
+</div>
+
+</dt><dt id="splitType-var" class="details">
+<h3 class="signature" id="splitType-var">
+
+var splitType  as <span class="type"><a href="../../Toybox/Activity/SplitInfo.html#SplitType-module">SplitInfo.SplitType</a></span> or <b>Null</b>
+
+</h3>
+
+
+
+<div class="docstring">
+  <div class="discussion">
+    <p>
+Type of split
+</p>
+
+
+  </div>
+</div>
+
+<div class="tags">
+
+
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 5.2.2
+</p>
+
+</div>
+
+
+
+
+    <p class="tag_title">Returns:</p>
+    <ul class="return">
+      <li>
+  <div class="inline">
+    <p>
+Split type identifier
+</p>
+
+
+  </div>
+</li>
+    </ul>
+</div>
+
+</dt><dt id="timerTime-var" class="details">
+<h3 class="signature" id="timerTime-var">
+
+var timerTime  as <span class="type"><a href="../../Toybox/Lang/Number.html">Lang.Number</a></span> or <b>Null</b>
+
+</h3>
+
+
+
+<div class="docstring">
+  <div class="discussion">
+    <p>
+Timer time for split in milliseconds
+</p>
+
+
+  </div>
+</div>
+
+<div class="tags">
+
+
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 5.2.2
+</p>
+
+</div>
+
+
+
+
+    <p class="tag_title">Returns:</p>
+    <ul class="return">
+      <li>
+  <div class="inline">
+    <p>
+Timer time in milliseconds
+</p>
+
+
+  </div>
+</li>
+    </ul>
+</div>
+
+</dt><dt id="totalAscent-var" class="details">
+<h3 class="signature" id="totalAscent-var">
+
+var totalAscent  as <span class="type"><a href="../../Toybox/Lang/Float.html">Lang.Float</a></span> or <b>Null</b>
+
+</h3>
+
+
+
+<div class="docstring">
+  <div class="discussion">
+    <p>
+Split ascent in meters
+</p>
+
+
+  </div>
+</div>
+
+<div class="tags">
+
+
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 5.2.2
+</p>
+
+</div>
+
+
+
+
+    <p class="tag_title">Returns:</p>
+    <ul class="return">
+      <li>
+  <div class="inline">
+    <p>
+Ascent for split in meters
+</p>
+
+
+  </div>
+</li>
+    </ul>
+</div>
+
+</dt><dt id="totalDescent-var" class="details">
+<h3 class="signature" id="totalDescent-var">
+
+var totalDescent  as <span class="type"><a href="../../Toybox/Lang/Float.html">Lang.Float</a></span> or <b>Null</b>
+
+</h3>
+
+
+
+<div class="docstring">
+  <div class="discussion">
+    <p>
+Split descent in meters
+</p>
+
+
+  </div>
+</div>
+
+<div class="tags">
+
+
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 5.2.2
+</p>
+
+</div>
+
+
+
+
+    <p class="tag_title">Returns:</p>
+    <ul class="return">
+      <li>
+  <div class="inline">
+    <p>
+Descent for split in meters
+</p>
+
+
+  </div>
+</li>
+    </ul>
+</div>
+
+</dt>
+ </div>
+
+</div>
+
+<hr/>
+
+<p class="signature">
+Generated Jun 9, 2026, 9:11:15 AM
+</p>
+
+</body>

@@ -1,0 +1,576 @@
+
+<!-- Header -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Toybox.ScanCode </title>
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+    <script type="text/javascript" charset="utf-8">
+      pathId = "Toybox.ScanCode";
+      relpath = '../';
+    </script>
+    <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+ </head>
+
+ <body>
+<div class="nav_wrap">
+  <iframe id="nav" src="../class_list.html"></iframe>
+  <div id="resizer"></div>
+</div>
+
+<div id="main" tabindex="-1">
+<iframe id="search_frame" src="../class_list.html"></iframe>
+
+
+  <div id="content"><h1>Module: Toybox.ScanCode</h1>
+
+
+<h2>Overview</h2>
+<!-- Overview -->
+
+<!-- Description -->
+  <div class="docstring">
+    <div class="discussion">
+      <p>
+The ScanCode module provides functionality to for generating machine
+readable code images.
+</p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+<div class="tags">
+
+<!-- Since -->
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 6.0.0
+</p>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- Constants -->
+<h2>Constant Summary</h2>
+<dl class="constants">
+<dt id="QrCodeEcc-module" class="">
+    <h3>QrCodeEcc</h3>
+  </dt>
+  <div class="tags">
+    <p class="tag_title">Since:</p>
+    <div class="since"><p>
+API Level 6.0.0
+</p>
+
+</div>
+  </div>
+<table class="enumTable">
+  <tr>
+    <th class="enumTableHeader">Name</th>
+    <th class="enumTableHeader">Value</th>
+    <th class="enumTableHeader">Since</th>
+    <th class="enumTableHeader">Description</th>
+  </tr>
+  <tr class="enumTableOdd" id="QR_CODE_ECC_LOW-const">
+    <td class="enumTableCell">QR_CODE_ECC_LOW</td>
+    <td class="enumTableCell">0</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"><p>
+Tolerate up to 7% error
+</p>
+
+</td>
+</tr><tr class="enumTableEven" id="QR_CODE_ECC_MEDIUM-const">
+    <td class="enumTableCell">QR_CODE_ECC_MEDIUM</td>
+    <td class="enumTableCell">1</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"><p>
+Tolerate up to 15% error
+</p>
+
+</td>
+</tr><tr class="enumTableOdd" id="QR_CODE_ECC_QUARTILE-const">
+    <td class="enumTableCell">QR_CODE_ECC_QUARTILE</td>
+    <td class="enumTableCell">2</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"><p>
+Tolerate up to 25% error
+</p>
+
+</td>
+</tr><tr class="enumTableEven" id="QR_CODE_ECC_HIGH-const">
+    <td class="enumTableCell">QR_CODE_ECC_HIGH</td>
+    <td class="enumTableCell">3</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"><p>
+Tolerate up to 30% error
+</p>
+
+</td>
+</tr>
+</table><dt id="QrCodeMask-module" class="">
+    <h3>QrCodeMask</h3>
+  </dt>
+  <div class="tags">
+    <p class="tag_title">Since:</p>
+    <div class="since"><p>
+API Level 6.0.0
+</p>
+
+</div>
+  </div>
+<table class="enumTable">
+  <tr>
+    <th class="enumTableHeader">Name</th>
+    <th class="enumTableHeader">Value</th>
+    <th class="enumTableHeader">Since</th>
+    <th class="enumTableHeader">Description</th>
+  </tr>
+  <tr class="enumTableOdd" id="QR_CODE_MASK_AUTO-const">
+    <td class="enumTableCell">QR_CODE_MASK_AUTO</td>
+    <td class="enumTableCell">-1</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="QR_CODE_MASK_0-const">
+    <td class="enumTableCell">QR_CODE_MASK_0</td>
+    <td class="enumTableCell">0</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="QR_CODE_MASK_1-const">
+    <td class="enumTableCell">QR_CODE_MASK_1</td>
+    <td class="enumTableCell">1</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="QR_CODE_MASK_2-const">
+    <td class="enumTableCell">QR_CODE_MASK_2</td>
+    <td class="enumTableCell">2</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="QR_CODE_MASK_3-const">
+    <td class="enumTableCell">QR_CODE_MASK_3</td>
+    <td class="enumTableCell">3</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="QR_CODE_MASK_4-const">
+    <td class="enumTableCell">QR_CODE_MASK_4</td>
+    <td class="enumTableCell">4</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="QR_CODE_MASK_5-const">
+    <td class="enumTableCell">QR_CODE_MASK_5</td>
+    <td class="enumTableCell">5</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableEven" id="QR_CODE_MASK_6-const">
+    <td class="enumTableCell">QR_CODE_MASK_6</td>
+    <td class="enumTableCell">6</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr><tr class="enumTableOdd" id="QR_CODE_MASK_7-const">
+    <td class="enumTableCell">QR_CODE_MASK_7</td>
+    <td class="enumTableCell">7</td>
+    <td class="enumTableCell"><p>
+API Level 6.0.0
+</p>
+
+</td>
+    <td class="enumTableCell"></td>
+</tr>
+</table>
+</dl>
+
+<h2>Typedef Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+<ul class="summary">
+   <li class="public">
+
+    <span class="summary_signature summary_signature_link">
+    <a href="#QrCodeOptions-named_type" title="QrCodeOptions (Named Type)"><strong>QrCodeOptions</strong></a> as { :minVersion as <span class="type"><a href="../Toybox/Lang/Number.html">Lang.Number</a></span>, :maxVersion as <span class="type"><a href="../Toybox/Lang/Number.html">Lang.Number</a></span>, :maskValue as <span class="type"><a href="../Toybox/ScanCode.html#QrCodeMask-module">ScanCode.QrCodeMask</a></span>, :color as <span class="type"><a href="../Toybox/Graphics.html#ColorType-named_type">Graphics.ColorType</a></span>, :backgroundColor as <span class="type"><a href="../Toybox/Graphics.html#ColorType-named_type">Graphics.ColorType</a></span> }
+    </span>
+
+
+
+</li><li class="public">
+
+    <span class="summary_signature summary_signature_link">
+    <a href="#QrCodeValue-named_type" title="QrCodeValue (Named Type)"><strong>QrCodeValue</strong></a> as <span class="type"><a href="../Toybox/Lang/ByteArray.html">Lang.ByteArray</a></span> or <span class="type"><a href="../Toybox/Lang/String.html">Lang.String</a></span> or <span class="type"><a href="../Toybox/Lang/Array.html">Lang.Array</a></span>&lt;<span class="type"><a href="../Toybox/Lang/ByteArray.html">Lang.ByteArray</a></span> or <span class="type"><a href="../Toybox/Lang/String.html">Lang.String</a></span>&gt;
+    </span>
+
+
+
+</li>
+</ul>
+
+
+<h2>
+   Instance Method Summary
+   <small><a href="#" class="summary_toggle">collapse</a></small>
+</h2>
+<ul class="summary">
+<li class="public">
+
+      <span class="summary_signature summary_signature_link">
+      <a href="#createQrCodeImage-instance_function" title="createQrCodeImage (Instance Function)"><strong>createQrCodeImage</strong></a>(value as <span class="type"><a href="../Toybox/ScanCode.html#QrCodeValue-named_type">ScanCode.QrCodeValue</a></span>, ecc as <span class="type"><a href="../Toybox/ScanCode.html#QrCodeEcc-module">ScanCode.QrCodeEcc</a></span>, imageSize as <span class="type"><a href="../Toybox/Lang/Number.html">Lang.Number</a></span>, options as <span class="type"><a href="../Toybox/ScanCode.html#QrCodeOptions-named_type">ScanCode.QrCodeOptions</a></span> or <b>Null</b>)    as <span class="type"><a href="../Toybox/Graphics/BufferedBitmap.html">Graphics.BufferedBitmap</a></span>
+      </span>
+
+  <span class="summary_desc">
+    <div class="inline">
+<p>
+Create a Quick Response Code image.
+</p>
+
+
+    </div>
+  </span>
+</li>
+</ul>
+
+ <div id="typedef_details" class="attr_details">
+    <h2>Typedef Details</h2>
+    <div class="details">
+<h3 class="signature" id="QrCodeOptions-named_type">
+
+<strong>QrCodeOptions</strong> as { :minVersion as <span class="type"><a href="../Toybox/Lang/Number.html">Lang.Number</a></span>, :maxVersion as <span class="type"><a href="../Toybox/Lang/Number.html">Lang.Number</a></span>, :maskValue as <span class="type"><a href="../Toybox/ScanCode.html#QrCodeMask-module">ScanCode.QrCodeMask</a></span>, :color as <span class="type"><a href="../Toybox/Graphics.html#ColorType-named_type">Graphics.ColorType</a></span>, :backgroundColor as <span class="type"><a href="../Toybox/Graphics.html#ColorType-named_type">Graphics.ColorType</a></span> }
+
+</h3>
+
+
+
+
+<div class="tags">
+
+
+
+
+
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 6.0.0
+</p>
+
+</div>
+
+
+
+
+</div>
+
+</div><div class="details">
+<h3 class="signature" id="QrCodeValue-named_type">
+
+<strong>QrCodeValue</strong> as <span class="type"><a href="../Toybox/Lang/ByteArray.html">Lang.ByteArray</a></span> or <span class="type"><a href="../Toybox/Lang/String.html">Lang.String</a></span> or <span class="type"><a href="../Toybox/Lang/Array.html">Lang.Array</a></span>&lt;<span class="type"><a href="../Toybox/Lang/ByteArray.html">Lang.ByteArray</a></span> or <span class="type"><a href="../Toybox/Lang/String.html">Lang.String</a></span>&gt;
+
+</h3>
+
+
+
+
+<div class="tags">
+
+
+
+
+
+<p class="tag_title">Since:</p>
+<div class="since"><p>
+API Level 6.0.0
+</p>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+ </div>
+
+
+ <div id="instance_method_details" class="method_details_list">
+  <h2>Instance Method Details</h2>
+<div class="method_details details">
+  <h3 class="signature" id="createQrCodeImage-instance_function">
+    <strong>createQrCodeImage(value as <span class="type"><a href="../Toybox/ScanCode.html#QrCodeValue-named_type">ScanCode.QrCodeValue</a></span>, ecc as <span class="type"><a href="../Toybox/ScanCode.html#QrCodeEcc-module">ScanCode.QrCodeEcc</a></span>, imageSize as <span class="type"><a href="../Toybox/Lang/Number.html">Lang.Number</a></span>, options as <span class="type"><a href="../Toybox/ScanCode.html#QrCodeOptions-named_type">ScanCode.QrCodeOptions</a></span> or <b>Null</b>)</strong> <span class="type"> as <span class="type"><a href="../Toybox/Graphics/BufferedBitmap.html">Graphics.BufferedBitmap</a></span></span>
+  </h3>
+
+  <div class="docstring">
+    <div class="discussion">
+      <p>
+Create a Quick Response Code image
+</p>
+
+
+    </div>
+  </div>
+
+  <div class="tags">
+    <p class="tag_title">Parameters:</p>
+    <ul class="param">
+      <li>
+        <span class="name">value</span>
+        &mdash;
+        <span class="type">(<span class="type"><a href="../Toybox/Lang/String.html">Lang.String</a></span>, <span class="type"><a href="../Toybox/Lang/ByteArray.html">Lang.ByteArray</a></span>, <span class="type"><a href="../Toybox/Lang/Array.html">Lang.Array</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+The value(s) to encode in the QR code image
+</p>
+
+
+        </div>
+    </li><li>
+        <span class="name">ecc</span>
+        &mdash;
+        <span class="type">(<span class="type"><a href="../Toybox/ScanCode.html#QrCodeEcc-module">ScanCode.QrCodeEcc</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+The error correction level
+</p>
+
+
+        </div>
+    </li><li>
+        <span class="name">imageSize</span>
+        &mdash;
+        <span class="type">(<span class="type"><a href="../Toybox/Lang/Number.html">Lang.Number</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+The width and height of the resulting QR code image in pixels.
+</p>
+
+
+        </div>
+    </li><li>
+        <span class="name">options</span>
+        &mdash;
+        <span class="type">(<span class="type"><a href="../Toybox/Lang/Dictionary.html">Lang.Dictionary</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+Dictionary of options.
+</p>
+
+
+        </div>
+        <ul>
+        <li>
+        <span class="name">:minVersion</span>
+        &mdash;
+        <span class="type">(<span class="type"><a href="../Toybox/Lang/Number.html">Lang.Number</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+The minimum QR code version. Default is 1.
+</p>
+
+
+        </div>
+    </li><li>
+        <span class="name">:maxVersion</span>
+        &mdash;
+        <span class="type">(<span class="type"><a href="../Toybox/Lang/Number.html">Lang.Number</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+The maximum QR code version. Default is 40.
+</p>
+
+
+        </div>
+    </li><li>
+        <span class="name">:maskValue</span>
+        &mdash;
+        <span class="type">(<span class="type"><a href="../Toybox/ScanCode.html#QrCodeMask-module">ScanCode.QrCodeMask</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+The mask value. Default is QR_CODE_MASK_AUTO.
+</p>
+
+
+        </div>
+    </li><li>
+        <span class="name">:color</span>
+        &mdash;
+        <span class="type">(<span class="type"><a href="../Toybox/Graphics.html#ColorType-named_type">Graphics.ColorType</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+The foreground color. Default is COLOR_BLACK.
+</p>
+
+
+        </div>
+    </li><li>
+        <span class="name">:backgroundColor</span>
+        &mdash;
+        <span class="type">(<span class="type"><a href="../Toybox/Graphics.html#ColorType-named_type">Graphics.ColorType</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+The background color. Default is COLOR_WHITE.
+</p>
+
+
+        </div>
+    </li>
+        </ul>
+    </li>
+    </ul>
+
+
+
+  <p class="tag_title">Supported Devices:</p>
+  <ul class="supported_devices" style="display:none">
+      <li>D2™ Mach 2 Pro</li><li>Edge® 1040 / 1040 Solar</li><li>Edge® 1050</li><li>Edge® 540 / 540 Solar</li><li>Edge® 550</li><li>Edge® 840 / 840 Solar</li><li>Edge® 850</li><li>Edge® MTB</li><li>Enduro™ 3</li><li>fēnix® 8 43mm</li><li>fēnix® 8 47mm / 51mm / tactix® 8 47mm / 51mm / quatix® 8 47mm / 51mm</li><li>fēnix® 8 Pro 47mm / 51mm / MicroLED / quatix® 8 Pro 47mm / 51mm</li><li>fēnix® 8 Solar 47mm</li><li>fēnix® 8 Solar 51mm / tactix® 8 Solar 51mm</li><li>fēnix® E</li><li>Forerunner® 570 42mm</li><li>Forerunner® 570 47mm</li><li>Forerunner® 970</li><li>Venu® 4 41mm</li><li>Venu® 4 45mm / D2™ Air X15</li><li>Venu® X1</li><li>vívoactive® 6</li>
+  </ul>
+
+    <p class="tag_title">Returns:</p>
+    <ul class="return">
+      <li>
+  <span class="type"><a href="../Toybox/Graphics/BufferedBitmap.html">Graphics.BufferedBitmap</a></span>
+  &mdash;
+  <div class="inline">
+    <p>
+A bitmap containing the QR code image
+</p>
+
+
+  </div>
+</li>
+    </ul>
+
+
+    <p class="tag_title">Since:</p>
+    <div class="since"><p>
+API Level 6.0.0
+</p>
+
+</div>
+
+    <p class="tag_title">Throws:</p>
+    <ul class="throws">
+      <li>
+        <span class="type">(<span class="type"><a href="../Toybox/Lang/InvalidOptionsException.html">Lang.InvalidOptionsException</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+Thrown if an option or parameter is invalid.
+</p>
+
+
+        </div>
+    </li><li>
+        <span class="type">(<span class="type"><a href="../Toybox/Lang/ValueOutOfBoundsException.html">Lang.ValueOutOfBoundsException</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+Thrown if an option or parameter value is out of bounds.
+</p>
+
+
+        </div>
+    </li><li>
+        <span class="type">(<span class="type"><a href="../Toybox/Lang/UnexpectedTypeException.html">Lang.UnexpectedTypeException</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+Thrown if an option or parameter is an unexpected type.
+</p>
+
+
+        </div>
+    </li><li>
+        <span class="type">(<span class="type"><a href="../Toybox/Graphics/OutOfGraphicsMemoryException.html">Graphics.OutOfGraphicsMemoryException</a></span>)</span>
+        &mdash;
+        <div class="inline">
+<p>
+Thrown if insufficient graphics memory is available for the resulting image.
+</p>
+
+
+        </div>
+    </li>
+    </ul>
+
+  </div>
+</div>
+</div>
+</div>
+
+<hr/>
+
+<p class="signature">
+Generated Jun 9, 2026, 9:11:19 AM
+</p>
+
+</body>
